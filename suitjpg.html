@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Suit Japan
+        </title>
+    </head>
+        <body>
+            
+
+
+    <script>
+            // Outline
+                var tanya = true;
+                 while ( tanya ){
+
+
+            //Sambutan
+                    var conf1 = confirm('Hai ingin bermain ?');  
+                    
+                    alert('ah masa gitu');
+            //Pilihan Player
+                var player = prompt('Silahkan pilih : Batu , Kertas , Gunting')
+
+
+            //Pilihan NPC
+
+
+            //Membuat RNDM Pick
+                var comp = Math.random();
+
+                if( comp < 0.30 ) {
+                    comp = ('Gunting');
+                }else if ( comp >= 0.30 && comp < 0.60 ){
+                           comp = ('Batu');
+                }else {
+                    comp = ('Kertas')
+                }
+                
+                
+                var result = '';
+            //Membuat rules
+                if( comp == player){
+                    'Seri';
+                }else if (player == 'Gunting') {
+                    result = (comp = 'Batu') ? 'Kalah!' : 'Menang!';
+                }else if ( player == 'Batu') {
+                    result = (comp = 'Gunting') ? 'Menang!' : 'Kalah!';
+                }else if ( player == 'Kertas'){
+                    result = (comp = 'Gunting')? 'Kalah!' : 'Menang!';
+                }else {
+                    result ='Salah memasukan pilihan!';
+                }
+
+
+            //Akhir
+                alert ('Kamu Memilih : ' + player + ' Dan Computer Memilih : ' + comp + '\nMaka : Kamu ' + result );
+
+                tanya = confirm('Bermain Lagi?');
+            }
+                var thx = alert( 'Terimakasih Sudah Bermain');
+
+                
+    </script>
+
+
+
+        </body>
+    </head>
+</html>
